@@ -1,12 +1,22 @@
 {
   "name": "vue-unity",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-lib": "vue-cli-service build --target lib --name VueUnity ./src/install.ts"
   },
+  "license": "MIT",
+  "author": {
+    "email": "tomaz.mesarec@gmail.com ",
+    "name": "Tomaž mesarec"
+  },
+  "keywords": ["vue", "unity", "webgl"],
+  "main" : "./dist/VueUnity.common.js",
+  "files": ["dist/*"],
+  "description": "A simple Vue component to support unity webgl player.",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",

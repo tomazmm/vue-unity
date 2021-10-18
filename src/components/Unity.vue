@@ -24,11 +24,14 @@ export default class Unity extends Vue {
 
   loaderUrl?: string;
 
-  @Prop({default: 'Build'}) readonly buildUrl: string
+  @Prop({default: 'Build'})
+  readonly buildUrl!: string
 
-  @Prop({default: 960}) readonly width: number
+  @Prop({default: 960})
+  readonly width!: number
 
-  @Prop({default: 600}) readonly height: number
+  @Prop({default: 600})
+  readonly height!: number
 
   created(): void {
     this.loaderUrl = this.buildUrl + "/Build.loader.js";
